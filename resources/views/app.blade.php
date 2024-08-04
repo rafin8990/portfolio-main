@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d703802588.js" crossorigin="anonymous"></script>
 </head>
 <style>
     body {
@@ -65,21 +66,109 @@
         }
     }
 
+    .lineUp {
+        opacity: 0;
+        transform: translateY(80%);
+        transition: opacity 1s ease-out, transform 1s ease-out
+    }
 
-    /* .bg-header {
-        height: 100%;
-        width: 100%;
-        position: absolute;
+    .lineUp.show {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    .slideLeft {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        overflow-x: hidden;
+    }
+
+    .slideLeft.show {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    .slideRight {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        overflow-x: hidden;
+    }
+
+    .slideRight.show {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+     .bg-header {
         background: radial-gradient(#333, #000);
-    } */
+    }
 </style>
 
 <body>
-    <div class="commonContainer">
+    <div class="">
         @include('shared.navbar')
         @yield('home')
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.lineUp');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.slideLeft');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.slideRight');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+    </script>
 </body>
 
 </html>

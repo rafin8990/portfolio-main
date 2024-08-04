@@ -1,11 +1,11 @@
-<section class="text-white py-10 space-y-5">
+<section class="text-white py-10 space-y-5 commonContainer">
     <p>About me</p>
 
     <div class="flex flex-col gap-10 md:flex-row justify-between ">
-        <div class="w-full">
+        <div class="w-full slideLeft">
             <img src="/images/thum.png" alt="">
         </div>
-        <div class="w-full space-y-5">
+        <div class="w-full space-y-5 slideRight">
             <p class="text-2xl md:text-3xl">
                 <span class="text-purple-400">
                     Hola!

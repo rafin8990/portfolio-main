@@ -57,7 +57,7 @@
 
 
 
-<div class="flex text-white py-4 justify-between">
+<div class="flex text-white py-4 justify-between commonContainer">
   <div>Rafin Hossain</div>
   <div>
     <button class="button">

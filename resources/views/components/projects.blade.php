@@ -1,4 +1,4 @@
-<section class="py-10 text-white">
+<section class="py-10 text-white commonContainer">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div class="space-y-3">
             <img src="/images/projects.png" alt="">
