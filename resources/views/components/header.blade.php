@@ -68,7 +68,7 @@
         <div
             class="mx-auto text-center px-6 py-2  font-bold border flex gap-2 items-center justify-center bg-white text-black mt-5 w-fit rounded-full">
 
-            <p><a target="blank" href="mailto:someone@example.com">rafin.hossain.8990@gmail.com</a></p>
+            <p><a target="blank" href="mailto:rafin.hossain.8990@gmail.com">rafin.hossain.8990@gmail.com</a></p>
         </div>
     </div>
 </header>
