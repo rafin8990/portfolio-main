@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Atherve Kulkarni",
+        "designation": "Co Founder And CEO",
+        "companyName": "Swachh Akshar(Inginious Solutions Ltd.)",
+        "des": "Rafin is very bright. He loves to learn and he focuses on his passion. Rafin is self motivated and never seeks inspiration from outside to make things happen. He has a knack for problem solving and he moves mountains at his workplace single-handedly. Never says no to a challenge and never leaves unfinished business at the workplace. He is a gem of a person and any company where he joins can be considered lucky to have him there.",
+        "date": "May 13, 2023",
+        "address": "Bhopal, India"
+    },
+    {
+        "id": 2,
+        "name": "Rahman M. Mahbub",
+        "designation": "Associate Professor and Head, Department of English Language and Literature , ",
+        "companyName": "City University Bangladesh",
+        "des": " I am proud and pleased to strongly recommend Rafin Hossain for the position of MERN Stack Developer.Rafin Hossain is very polite and gentle. He is very popular among his friends and fellow-mates. He possesses an impressive personality and has the ability to work individually and with others in a group under pressure. I am confident that he is qualified for the position, and I believe he will contribute to the advancement of your institution, as well as the advancement of his career.",
+        "date": "July 14, 2023",
+        "address": "Bhopal, India"
+    }
+]

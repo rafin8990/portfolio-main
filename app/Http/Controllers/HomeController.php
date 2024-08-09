@@ -5,12 +5,25 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        $path = public_path('data/review.json');
+
+        // Check if the file exists
+        if (!File::exists($path)) {
+            abort(404, 'File not found');
+        }
+
+        // Get the contents of the file
+        $json = File::get($path);
+
+        // Decode the JSON data
+        $data = json_decode($json, true);
+        return view('pages.home', compact('data'));
     }
 
 

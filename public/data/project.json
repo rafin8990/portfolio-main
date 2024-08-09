@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "NEDUBD",
+        "designation": "Complete School Management system",
+        "shortDes": "NEDUBD develops a range of software solutions tailored for educational institutions, including School management, Teacher and student management and details, Exam Results and Student Exam Reports and General Accounts and Fees Collection and so on. As a team leader of NEDUBD projects I had to lead a team that enhanced my professionalism and lead me to learn challenges and difficulties",
+        "bullets": [
+            "SaaS Project with Custom Login, Registration feature maintain by session",
+            "Add student, Download Student, Update Student Basic Info, Add Student with Excel sheet, Student Details, Student Shortlist, Student Profile, Sibling Add, Class section Total Student",
+            "Admit Card, set Admit card, print admit card, Mark Input, exam process, single student reports, Student exam mark delete"
+        ]
+    }
+]

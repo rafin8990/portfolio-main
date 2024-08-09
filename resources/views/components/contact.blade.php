@@ -1,309 +1,143 @@
 <style>
-    .section-header {
-        text-align: center;
-        margin: 0 auto;
-        padding: 40px 0;
-        font: 300 60px 'Oswald', sans-serif;
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-    }
-
-    .contact-wrapper {
+    /* From Uiverse.io by omriluz */
+    .form-container {
+        /* width: 400px; */
+        background: linear-gradient(#212121, #212121) padding-box,
+            linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+        border: 2px solid transparent;
+        padding: 32px 24px;
+        font-size: 14px;
+        font-family: inherit;
+        color: white;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 20px;
-        position: relative;
-        max-width: 840px;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        background-size: 200% 100%;
+        animation: gradient 5s ease infinite;
     }
 
-    /* Left contact page */
-    .form-horizontal {
-        /*float: left;*/
-        max-width: 400px;
-        font-family: 'Lato';
-        font-weight: 400;
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
-    .form-control,
-    textarea {
-        max-width: 400px;
-        background-color: #000;
-        color: #fff;
-        letter-spacing: 1px;
+    .form-container button:active {
+        scale: 0.95;
     }
 
-    .send-button {
-        margin-top: 15px;
-        height: 34px;
-        width: 400px;
-        overflow: hidden;
-        transition: all .2s ease-in-out;
+    .form-container .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .alt-send-button {
-        width: 400px;
-        height: 34px;
-        transition: all .2s ease-in-out;
+    .form-container .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
     }
 
-    .send-text {
+    .form-container .form-group label {
         display: block;
-        margin-top: 10px;
-        font: 700 12px 'Lato', sans-serif;
-        letter-spacing: 2px;
+        margin-bottom: 5px;
+        color: #717171;
+        font-weight: 600;
+        font-size: 12px;
     }
 
-    .alt-send-button:hover {
-        transform: translate3d(0px, -29px, 0px);
-    }
-
-    /* Begin Right Contact Page */
-    .direct-contact-container {
-        max-width: 400px;
-    }
-
-    /* Location, Phone, Email Section */
-    .contact-list {
-        list-style-type: none;
-        margin-left: -30px;
-        padding-right: 20px;
-    }
-
-    .list-item {
-        line-height: 4;
-        color: #aaa;
-    }
-
-    .contact-text {
-        font: 300 18px 'Lato', sans-serif;
-        letter-spacing: 1.9px;
-        color: #bbb;
-    }
-
-    .place {
-        margin-left: 62px;
-    }
-
-    .phone {
-        margin-left: 56px;
-    }
-
-    .gmail {
-        margin-left: 53px;
-    }
-
-    .contact-text a {
-        color: #bbb;
-        text-decoration: none;
-        transition-duration: 0.2s;
-    }
-
-    .contact-text a:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-
-
-    /* Social Media Icons */
-    .social-media-list {
-        position: relative;
-        font-size: 22px;
-        text-align: center;
+    .form-container .form-group input {
         width: 100%;
-        margin: 0 auto;
-        padding: 0;
+        padding: 12px 16px;
+        border-radius: 8px;
+        color: #fff;
+        font-family: inherit;
+        background-color: transparent;
+        border: 1px solid #414141;
     }
 
-    .social-media-list li a {
+    .form-container .form-group textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 8px;
+        resize: none;
         color: #fff;
+        height: 96px;
+        border: 1px solid #414141;
+        background-color: transparent;
+        font-family: inherit;
     }
 
-    .social-media-list li {
-        position: relative;
-        display: inline-block;
-        height: 60px;
-        width: 60px;
-        margin: 10px 3px;
-        line-height: 60px;
-        border-radius: 50%;
-        color: #fff;
-        background-color: rgb(27, 27, 27);
+    .form-container .form-group input::placeholder {
+        opacity: 0.5;
+    }
+
+    .form-container .form-group input:focus {
+        outline: none;
+        border-color: #e81cff;
+    }
+
+    .form-container .form-group textarea:focus {
+        outline: none;
+        border-color: #e81cff;
+    }
+
+    .form-container .form-submit-btn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: flex-start;
+        font-family: inherit;
+        color: #717171;
+        font-weight: 600;
+        width: 60%;
+        background: #313131;
+        border: 1px solid #414141;
+        padding: 12px 16px;
+        font-size: inherit;
+        gap: 8px;
+        margin-top: 8px;
         cursor: pointer;
-        transition: all .2s ease-in-out;
+        border-radius: 6px;
     }
 
-    .social-media-list li:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        border-radius: 50%;
-        opacity: 0;
-        box-shadow: 0 0 0 1px #fff;
-        transition: all .2s ease-in-out;
-    }
-
-    .social-media-list li:hover {
+    .form-container .form-submit-btn:hover {
         background-color: #fff;
-    }
-
-    .social-media-list li:hover:after {
-        opacity: 1;
-        transform: scale(1.12);
-        transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-    }
-
-    .social-media-list li:hover a {
-        color: #000;
-    }
-
-    .copyright {
-        font: 200 14px 'Oswald', sans-serif;
-        color: #555;
-        letter-spacing: 1px;
-        text-align: center;
-    }
-
-    hr {
-        border-color: rgba(255, 255, 255, .6);
-    }
-
-    /* Begin Media Queries*/
-    @media screen and (max-width: 850px) {
-        .contact-wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .direct-contact-container,
-        .form-horizontal {
-            margin: 0 auto;
-        }
-
-        .direct-contact-container {
-            margin-top: 60px;
-            max-width: 300px;
-        }
-
-        .social-media-list li {
-            height: 60px;
-            width: 60px;
-            line-height: 60px;
-        }
-
-        .social-media-list li:after {
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-        }
-    }
-
-    @media screen and (max-width: 569px) {
-
-        .direct-contact-container,
-        .form-wrapper {
-            float: none;
-            margin: 0 auto;
-        }
-
-        .form-control,
-        textarea {
-
-            margin: 0 auto;
-        }
-
-
-        .name,
-        .email,
-        textarea {
-            width: 280px;
-        }
-
-        .direct-contact-container {
-            margin-top: 60px;
-            max-width: 280px;
-        }
-
-        .social-media-list {
-            left: 0;
-        }
-
-        .social-media-list li {
-            height: 55px;
-            width: 55px;
-            line-height: 55px;
-            font-size: 2rem;
-        }
-
-        .social-media-list li:after {
-            width: 55px;
-            height: 55px;
-            line-height: 55px;
-        }
-
-    }
-
-    @media screen and (max-width: 410px) {
-        .send-button {
-            width: 99%;
-        }
+        border-color: #fff;
     }
 </style>
 
-<section id="contact">
-    <div class="flex gap-10 justify-center items-center">
-        <form id="contact-form" class="form-horizontal" role="form" method="POST" action="{{ route('send.email') }}">
-            @csrf
-            <div class="form-group">
-                <div class="">
-                    <input type="text" class="input bg-transparent w-full border border-white" id="name"
-                        placeholder="NAME" name="name" required>
-                </div>
-            </div>
+<section class="commonContainer flex flex-col md:flex-row gap-10 items-center  justify-between">
+    <div class="text-white">
+        <p class="text-[32px] md:text-[42px] xl:text-[52px] font-bold ">Let's work together.</p>
 
-            <div class="form-group">
-                <div class="">
-                    <input type="email" class="input bg-transparent w-full border border-white mt-5" id="email"
-                        placeholder="EMAIL" name="email" value="" required>
-                </div>
-            </div>
-
-            <textarea class="textarea bg-transparent w-full border border-white mt-5" rows="6" placeholder="MESSAGE"
-                name="message" required></textarea>
-
-            <button class=" send-button border p-2 rounded-lg text-white" id="submit" type="submit" value="SEND">
-                <div class="alt-send-button">
-                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                </div>
-
-            </button>
-
-        </form>
-        <div class="direct-contact-container md:ml-10">
-
-            <ul class="contact-list">
-                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Dhaka,
-                            Bangladesh</span></i></li>
-
-                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                href="tel:+8801701297556" title="Give me a call">+8801701297556</a></span></i></li>
-
-                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                href="mailto:rafin.hossain.8990@gmail.com"
-                                title="Send me an email">rafin.hossain.8990@gmail.com</a></span></i></li>
-
-            </ul>
-
-
-
-
+        <div>
+            <p class="text-[24px] md:text-[32px] xl:text-[40px]">get in Touch with me</p>
+            <p>Let's talk & make something amazing together.
+                Start by saying hi!</p>
         </div>
     </div>
-
+    <div class="form-container">
+        <form class="form">
+            <div class="form-group">
+                <label for="email">Company Email</label>
+                <input type="text" id="email" name="email" required="">
+            </div>
+            <div class="form-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+            </div>
+            <button class="form-submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
 </section>

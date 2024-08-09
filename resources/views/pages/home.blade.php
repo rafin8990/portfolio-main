@@ -8,6 +8,7 @@ Rafin Hossain
 @include('components.projects')
 @include('components.about')
 @include('components.newsletter')
+@include('components.feedback')
 @include('components.contact')
 @include('components.footer')
 @endsection
