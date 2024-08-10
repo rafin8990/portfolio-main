@@ -17,5 +17,5 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
-Route::get('/project-details/:id',[ProjectDetailsController::class,"projectdetails"])->name('project.details');
+Route::get('/project-details/{id}',[ProjectDetailsController::class,"projectdetails"])->name('project.details');
 Route::post('/send-email', [HomeController::class, 'sendEmail'])->name('send.email');

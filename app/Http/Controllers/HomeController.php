@@ -12,6 +12,7 @@ class HomeController extends Controller
     public function home()
     {
         $path = public_path('data/review.json');
+        $path2 = public_path('data/project.json');
 
         // Check if the file exists
         if (!File::exists($path)) {
@@ -20,10 +21,12 @@ class HomeController extends Controller
 
         // Get the contents of the file
         $json = File::get($path);
+        $jsons = File::get($path2);
 
         // Decode the JSON data
         $data = json_decode($json, true);
-        return view('pages.home', compact('data'));
+        $projects = json_decode($jsons, true);
+        return view('pages.home', compact('data', 'projects'));
     }
 
 

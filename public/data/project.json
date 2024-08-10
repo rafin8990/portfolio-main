@@ -7,7 +7,112 @@
         "bullets": [
             "SaaS Project with Custom Login, Registration feature maintain by session",
             "Add student, Download Student, Update Student Basic Info, Add Student with Excel sheet, Student Details, Student Shortlist, Student Profile, Sibling Add, Class section Total Student",
-            "Admit Card, set Admit card, print admit card, Mark Input, exam process, single student reports, Student exam mark delete"
-        ]
+            "Admit Card, set Admit card, print admit card, Mark Input, exam process, single student reports, Student exam mark delete",
+            " Common setting, add class, add section, add group, add class wise section, add class wise group, add subject,add class wise subject, add class exam, add short code, add exam marks, set class exam marks",
+            "General Attendance, Manual attendance, ZKTechO Machine Attendance Integrate",
+            "Pay slip collection, Print Unpaid pays lip, delete pay slip, generate pay Slip, Generate multiple payslip"
+        ],
+        "imageOne": "/images/nedubd/imageOne.png",
+        "imageTwo": "/images/nedubd/imageTwo.png",
+        "imageThree": "/images/nedubd/imageThree.png",
+        "imageFour": "/images/nedubd/imageFour.png",
+        "gitClient": "N/A",
+        "gitServer": "N/A",
+        "liveLink": "https://cms.nedubd.com/",
+        "startDate": "January 2024",
+        "endDate": "Present",
+        "technology": "PHP,Laravel,MySQL,JavaScript, Jquery"
+    },
+    {
+        "id": 2,
+        "name": "Accounts Management System",
+        "designation": "Business Accounts management system website for business purpose",
+        "shortDes": "An innovative solution designed to streamline the financial operations of institutions.",
+        "bullets": [
+            "SaaS Project with Custom Login, Registration feature maintain by session",
+            " Add Bank Account & Cash Amount & total balance. Later, transactions can be done based on this balance",
+            "This is part of Transection. Specific companies, how much income has been earned from a particular ledger of a particular project of the company or how much expenditure has been made for it can be done here.",
+            "To keep track of business loans or loans, how much I get from me, or how much I get from whom, can be added and it can be done more or less through transactions",
+            " By adding the product, the product can be purchased and sold. The sales platform can be used as a pause. And the transaction history of each individual product can be seen."
+        ],
+        "imageOne": "/images/accounts/imageOne.png",
+        "imageTwo": "/images/accounts/imageTwo.png",
+        "imageThree": "/images/accounts/imageThree.png",
+        "imageFour": "/images/accounts/imageFour.png",
+        "gitClient": "N/A",
+        "gitServer": "N/A",
+        "liveLink": "https://ams.nedubd.com/",
+        "startDate": "March 2024",
+        "endDate": "July 2024",
+        "technology": " JavaScript, React, Node JS, Express JS, MySQL"
+    },
+    {
+        "id": 3,
+        "name": "Match Making Platform",
+        "designation": "A site to match user and manage from admin Dashboard ",
+        "shortDes": "An innovative solution designed to streamline the User match making operations of institutions.",
+        "bullets": [
+            "Its a MERN Project with custom login feature",
+            "User can register with email and get an sms with password. Then user can login with email and password and update his prifile.",
+            "After every register , Admin can get approved request and after approved, user can get his profile. User can Also any edit his profile can need to adin approval.",
+            "Admin Can Match manual and multiple user. Admin Select an user . There have two button. When he click on find match button , he can go user details page with suggested user.",
+            "In user details page can match other user. Then those two user get email. If they accept, then add matches list."
+        ],
+        "imageOne": "/images/matchmaking/imageOne.png",
+        "imageTwo": "/images/matchmaking/imageTwo.png",
+        "imageThree": "/images/matchmaking/imageThree.png",
+        "imageFour": "/images/matchmaking/imageFour.png",
+        "gitClient": "https://github.com/rafin8990/match-making-client",
+        "gitServer": "https://github.com/rafin8990/match-making-backend",
+        "liveLink": "https://matchmacking-platform.netlify.app/",
+        "startDate": "March 2024",
+        "endDate": "July 2024",
+        "technology": " JavaScript, React, Node JS, Express JS, MongoDB, TypeScript"
+    },
+    {
+        "id": 4,
+        "name": "Doctors Portal",
+        "designation": "A site to hospital management and manage from admin Dashboard ",
+        "shortDes": "It's is a Doctor daily rutine website.",
+        "bullets": [
+            "Its a MERN Project with Firebase authentication feature",
+            "User can register with name, email and  password. Then user can login with email and password and update his prifile.",
+            "User can get appointment. If same day same time appoinment already exist for other user , then user can not get appoinment",
+            "Admin can see All appoinment. He can update and delete appoinment",
+            "User can ap for appoinment through stripe payment fateway."
+        ],
+        "imageOne": "/images/doctor/imageOne.png",
+        "imageTwo": "/images/doctor/imageTwo.png",
+        "imageThree": "/images/doctor/imageThree.png",
+        "imageFour": "/images/doctor/imageFour.png",
+        "gitClient": "https://github.com/rafin8990/doctors-portal-client",
+        "gitServer": "https://github.com/rafin8990/doctors-portal-server",
+        "liveLink": "https://doctors-portal-349f1.firebaseapp.com/",
+        "startDate": "November 2022",
+        "endDate": "November 2022",
+        "technology": " JavaScript, React, Node JS, Express JS, MongoDB"
+    },
+    {
+        "id": 5,
+        "name": "Exclusive Photography",
+        "designation": "A site to photographer management and manage from admin Dashboard ",
+        "shortDes": "Its is a Photographer service rutine website.",
+        "bullets": [
+            "Its a MERN Project with Firebase authentication feature",
+            "User can register with name, email and  password. Then user can login with email and password and update his prifile.",
+            "User can get service. service details, make appoinment for service",
+            "User can make payment for service",
+            "User can make review for service"
+        ],
+        "imageOne": "/images/photography/imageOne.png",
+        "imageTwo": "/images/photography/imageTwo.png",
+        "imageThree": "/images/photography/imageThree.png",
+        "imageFour": "/images/photography/imageFour.png",
+        "gitClient": "https://github.com/rafin8990/exclusive-photography-client",
+        "gitServer": "https://github.com/rafin8990/exclusive-photography-server",
+        "liveLink": "https://doctors-portal-349f1.firebaseapp.com/",
+        "startDate": "October 2022",
+        "endDate": "October 2022",
+        "technology": " JavaScript, React, Node JS, Express JS, MongoDB"
     }
 ]

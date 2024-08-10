@@ -126,6 +126,22 @@
             <p>Let's talk & make something amazing together.
                 Start by saying hi!</p>
         </div>
+        <div class="flex gap-6 text-2xl mt-5">
+            <p><a href="https://github.com/rafin8990" class="contact-icon">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a></p>
+            <p>
+
+                <a href="https://www.linkedin.com/in/rafin-hossain/" class="contact-icon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </p>
+            <p>
+                <a href="https://www.facebook.com/Rafin.Hossain.19614" class="contact-icon">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </p>
+        </div>
     </div>
     <div class="form-container">
         <form class="form">
@@ -135,7 +151,7 @@
             </div>
             <div class="form-group">
                 <label for="textarea">How Can We Help You?</label>
-                <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
             </div>
             <button class="form-submit-btn" type="submit">Submit</button>
         </form>
