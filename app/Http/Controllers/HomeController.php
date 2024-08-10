@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class HomeController extends Controller
 {
@@ -47,5 +49,13 @@ class HomeController extends Controller
         Mail::to('rafin.hossain.8990@gmail.com')->send(new ContactMail($details));
 
         return back()->with('message_sent', 'Your message has been sent successfully!');
+    }
+
+    public function download()
+    {
+        $filePath = public_path('resume.pdf');
+        $fileName = 'resume.pdf';
+
+        return response()->download($filePath, $fileName);
     }
 }
